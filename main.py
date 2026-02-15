@@ -18,6 +18,7 @@ def download_audio(url):
     return "audio.mp3"
 
 def transcribe_audio(file_path):
+    # Available models: "tiny", "base", "small", "medium", "large"
     model = whisper.load_model("base")
     result = model.transcribe(file_path)
     return "\n".join([segment['text'].strip() for segment in result['segments']])

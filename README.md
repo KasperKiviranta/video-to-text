@@ -40,6 +40,16 @@ Run the script by providing a YouTube URL as a command-line argument:
 python main.py "https://www.youtube.com/watch?v=x7X9w_GIm1s"
 ```
 
+### Model Options
+
+By default, the tool uses the "base" model, which offers a good balance of speed and accuracy. However, you can modify `main.py` to use other models depending on your needs:
+
+- `tiny`: Fastest, lowest accuracy, ~39M parameters.
+- `base`: Fast, good accuracy, ~74M parameters (default).
+- `small`: Slower, better accuracy, ~244M parameters.
+- `medium`: Slow, high accuracy, ~769M parameters.
+- `large`: Slowest, best accuracy, ~1550M parameters.
+
 ### Expected Outcome
 
 - The script will download the audio in MP3 format.
